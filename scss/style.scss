@@ -1,0 +1,118 @@
+// @import url(./normalize.css);
+@import 'normalize.css';
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    outline: 0;
+    outline-offset: 0;
+}
+
+$fontfamily: "Lato";
+
+:where(h1, h2, h3, h, ul, li, a, p, address, img) {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: $fontfamily;
+}
+
+li {
+    list-style: none;
+}
+
+// .container{
+// max-width: 1130px;
+// padding: 0 15px;
+// }
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: none;
+}
+
+.ibg img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    // background-image: url(./../images/top-bgrnd.jpeg);
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // height: 100%;
+    // flex: 1 0 100%;
+    // min-height: 800px;
+}
+.header{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.top {
+
+
+
+    // .top__menu
+
+    &__menu {
+        height: 85px;
+    }
+}
+
+.menu {
+    // background-color: transparent;
+    // .menu__list
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 63px;
+    }
+
+    // .menu__link
+
+    &__link {}
+
+    // .menu__logo-link
+    &__logo-link {}
+}
